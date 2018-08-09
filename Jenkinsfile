@@ -8,12 +8,15 @@ pipeline {
                 sh "echo 'deploying SUT....'"
                 sh "sleep 10"
             }
-    stage('Deploy app (test)') {
-             steps {
-                  sh "mvn clean verify'"
-                  }
 
-        }
     }
+        stage('Deploy app (test)') {
+                 steps {
+                      sh "mvn clean verify'"
+                      }
+
+            }
 }
+}
+
 
