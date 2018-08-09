@@ -11,7 +11,9 @@ pipeline {
     stage('Deploy app (test)') {
              steps {
                   sh "mvn clean verify'"
+                  }
 
         }
     }
 }
+
